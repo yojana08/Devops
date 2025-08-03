@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <p>Hi, Welcome to the Registration Page</p>
+    <p>Today is a {{ day_of_week }}</p>
+    <p>The time is {{ current_time}}</p>
+
+    <div class="center">
+        <form action="/submit" , method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <!-- <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br> -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>
+            <!-- <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your Password">  
+            <br> -->
+            <input type="submit" value="Submit">
+            </form>
+
+            <a href="get_data"><button>View Data</button></a>
+    </div>  
+</body>
+<style>
+    body {
+        background-color: black;
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: yellow;
+    }
+      .center {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        text-align: left;
+        border: 3px solid green;
+    }
+
+</style>
+</html>
