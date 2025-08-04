@@ -1,2 +1,4 @@
 Some other file says hello
 git log --oneline --decorate --graph --all
+another line
+
